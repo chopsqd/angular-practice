@@ -215,6 +215,7 @@ img {
 
   &.invalid {
     color: var(--primary-color);
+
     input {
       border-color: var(--primary-color);
     }
