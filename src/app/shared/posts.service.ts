@@ -38,4 +38,8 @@ export class PostsService {
         })
       )
   }
+
+  remove(id: string): Observable<void> {
+    return this.http.delete<void>(`${environment.DB_URL}/posts/${id}.json`)
+  }
 }
